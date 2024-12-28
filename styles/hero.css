@@ -1,0 +1,97 @@
+.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+
+  & h1 div {
+    display: inline-block;
+    overflow: hidden;
+    height: 5rem;
+    /* border: 2px solid lime; */
+    width: min-content;
+    vertical-align: bottom;
+
+  }
+  & h1 {
+    max-width: 40rem;
+  }
+
+  & h1 span:nth-child(1),
+  & h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+  & h1 span {
+    display: block;
+    animation: slideUp 7s infinite ease;
+    }
+}
+
+    @keyframes slideUp {
+      0%, 22% {
+        transform: translateY(0);
+      }
+
+      /* Bounce suave para o primeiro nível (-5rem) */
+      23% {
+        transform: translateY(-5.5rem);
+      }
+      25% {
+        transform: translateY(-4.8rem);
+      }
+      27% {
+        transform: translateY(-5.2rem);
+      }
+      29% {
+        transform: translateY(-5rem);
+      }
+
+      /* Fica estável em -5rem */
+      33%, 55% {
+        transform: translateY(-5rem);
+      }
+
+      /* Bounce suave para o segundo nível (-10rem) */
+      56% {
+        transform: translateY(-10.5rem);
+      }
+      58% {
+        transform: translateY(-9.8rem);
+      }
+      60% {
+        transform: translateY(-10.2rem);
+      }
+      62% {
+        transform: translateY(-10rem);
+      }
+
+      /* Fica estável em -10rem */
+      66%, 88% {
+        transform: translateY(-10rem);
+      }
+
+      /* Bounce suave para o terceiro nível (-15rem) */
+      89% {
+        transform: translateY(-15.5rem);
+      }
+      91% {
+        transform: translateY(-14.8rem);
+      }
+      93% {
+        transform: translateY(-15.2rem);
+      }
+      95% {
+        transform: translateY(-15rem);
+      }
+
+      /* Fica estável no topo (-15rem) */
+      100% {
+        transform: translateY(-15rem);
+      }
+    }
