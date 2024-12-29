@@ -18,7 +18,7 @@ Landing Page de animação e transição no css
 <br>
 
 <p align="center">
-  <img alt="Zingen Karaokê" src="./.github/cover.jpg width="100%">
+  <img alt="Snitap - Patins LP" src="./.github/cover.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
